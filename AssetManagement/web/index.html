@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Asset Management Application</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .text {
+                background-color: #ffffff;
+                font-size: 19px;
+                color:#000000;
+                border: 0px solid #2d63c8;
+                padding: 15px 50px;
+                letter-spacing: 3px;
+                cursor: pointer;
+                vertical-align: middle;
+                text-decoration: none;
+            }
+            .text:hover {
+                    color: #eb2442;
+            }
+            .container-1 {
+                display: flex;
+                align-items: right;
+            }
+            .user {
+                font-size: 15px;
+                align-content: right;
+                margin-top: 15px;
+                margin-left: auto;
+            } 
+
+            .container {
+                display: grid; 
+                grid-template-columns: 0.7fr 1.3fr; 
+                grid-template-rows: 1fr; 
+                gap: 0px 6px; 
+                margin-top: 25px;
+                grid-template-areas: 
+                  "SLIDESHOW TITLE";
+            }
+
+            .SLIDESHOW {
+                grid-area: SLIDESHOW; 
+            }
+
+            .TITLE { 
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                gap: 0px 0px;
+                grid-auto-flow: row;
+                justify-content: start;
+                align-content: start;
+                justify-items: start;
+                align-items: start;
+                grid-template-areas:
+                  "HOME-TITLE"
+            }
+
+            .titLe_IMG {
+                border-radius: 25%;
+                width: 413px;
+                height: 413px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .title_text {
+                font-size: 96px;
+            } 
+
+	</style>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <div class="container-1">
+            <a class="text" style="color: #eb2442;" href='index.html'>HOME</a>
+            <a class="text" href=''> ASSETS </a>
+            <a class="text" href=''>RENTAL</a>
+            <a class="user" style="color:black">OFFICER IN CHARGE OF ASSETS</a>
+        </div>
+        <!-- TITLE -->
+        <div class="container">
+            <div class="SLIDESHOW">
+                <!--PUT IMAGE / VIDEO HERE-->
+            </div>
+            <div class="TITLE">
+              <div class="HOME-TITLE"> 
+                <b class="title_text">ASSET</b>
+                <br>
+                <b class="title_text">MANAGEMENT</b>
+                <p style="font-size: 20px;">
+                    Manage assets and rentals of different homeowner associations.
+                    <br>
+                    Includes Property, Equipment, Furniture, and others!</p>
+                <a class="text" href=''> ASSETS</a>
+                
+                <a class="text" href='update_rentals.jsp'>RENTALS</a>
+              </div>
+            </div>
+          </div>
+        <a href="registerasset.jsp">    Register an Asset</a><br>
+        <a href="updateasset.jsp">      Update Asset Values</a><br>
+        <a href="encloseasset.jsp">     Enclose Asset</a><br>
+        <a href="disposeasset.jsp">     Dispose an Asset</a><br>
+        <a href="deleteasset.jsp">     Delete an Asset</a><br>
+        <a href="recordrental.jsp">     Rent an Asset</a><br>
+        <a href="returnrental.jsp">     Return an Asset</a><br>
+    </body>
+</html>
